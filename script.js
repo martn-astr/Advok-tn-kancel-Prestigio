@@ -8,13 +8,24 @@ const sections = document.querySelectorAll('main section');
 
 links.forEach(link => {
   link.addEventListener('click', e => {
+    const href = link.getAttribute('href') || '';
+    if(!href.startsWith('#')) return;
     e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
+    const targetId = href.substring(1);
+    const target = document.getElementById(targetId);
+    if(!target) return;
 
+    // optional: keep sections 'active' class behaviour if used for styling
     sections.forEach(sec => sec.classList.remove('active'));
-    document.getElementById(targetId).classList.add('active');
+    target.classList.add('active');
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // smooth scroll to the section and update URL hash without blurring
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    try { history.replaceState(null, '', '#' + targetId); } catch(err) {}
+
+    // close mobile nav if present
+    const _nav = document.getElementById('navLinks');
+    if(_nav && _nav.classList.contains('show')) _nav.classList.remove('show');
   });
 });
 

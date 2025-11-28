@@ -117,7 +117,7 @@
         }
             .brand > div:last-child {
                 display:flex;
-                flex-direction:column; /* put subtitle under Prestigio in the navbar */
+                flex-direction:column; /* put subtitle under Chobotnice in the navbar */
                 align-items:flex-start;
                 gap:4px;
             }

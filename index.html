@@ -3,14 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Advokátní kancelář | Prestigio</title>
-    <link rel="icon" href="iconlogo.png" type="image/png">
+    <title>Advokátní kancelář | Chobotnice</title>
+    <link rel="icon" href="logo.jpeg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <style>
-
-    </style>
 </head>
 <body>
 
@@ -18,10 +15,10 @@
         <div class="container nav-inner">
             <a class="brand" href="#hero">
                 <div class="logo">
-                    <img src="webpagelogo.png" alt="Prestigio" style="width:100%;height:100%;object-fit:contain">
+                    <img src="logo.jpeg" alt="Chobotnice" style="width:100%;height:100%;object-fit:contain">
                 </div>
                 <div>
-                    <h1>Prestigio</h1>
+                    <h1>Chobotnice</h1>
                     <p>Profesionálně • Strategicky</p>
                 </div>
             </a>
@@ -49,7 +46,7 @@
                 <h2 class="reveal">Vaše právo. Naše strategie.</h2>
 
                 <div class="hero-branding reveal">
-                    <h1>Prestigio</h1>
+                    <h1>Chobotnice</h1>
                     <div class="hero-sub"> Diskrétně <span class="dot">•</span> Profesionálně<span class="dot">•</span>Strategicky </div>
                 </div>
 
@@ -212,30 +209,17 @@
                 <p>Specialisté s praxí v náročných projektech.</p>
             </div>
 
-            <div class="grid team-grid reveal" style="grid-template-columns:repeat(2,1fr);">
-                <div class="member reveal">
-                    <div>
-                        <strong>Matthew Richards</strong>
-                        <div class="muted-small">Trestní spory a řízení</div>
-                        <div style="margin-top:8px;color:var(--gold);font-weight:700"><a href="tel:+420907161952" style="color:var(--gold);text-decoration:none">907 161 9526</a></div>
-                        <div class="avatar" aria-hidden="false">
-                            <!-- Use an <img> so .avatar img CSS displays real photos when provided. Replace src with real file when available. -->
-                            <img src="richards.png" alt="Matthew Richards">
-                        </div>
-                    </div>
+            <div class="grid reveal" style="grid-template-columns:repeat(2,1fr);gap:24px;">
+                <div class="card">
+                    <h4 style="margin-bottom:8px">Matthew Richards</h4>
+                    <div class="muted-small" style="margin-bottom:12px">Trestní spory a řízení</div>
+                    <div style="color:var(--gold);font-weight:700;cursor:pointer" onclick="navigator.clipboard.writeText('9071619526').then(() => alert('Telefonní číslo zkopírovano!'))" title="Klikněte pro zkopírování">📞 907 161 9526</div>
                 </div>
 
-                <div class="member reveal">
-                    <div>
-                        <strong>Marco Deluca</strong>
-                        <div class="muted-small">Trestní spory, civilní případy</div>
-                        <div style="margin-top:8px;color:var(--gold);font-weight:700"><a href="tel:+420907963562" style="color:var(--gold);text-decoration:none">907 963 5621</a></div>
-                        <div class="avatar photo-placeholder" data-name="Marco Deluca" title="Nahrát foto" role="img" aria-label="Avatar Marco Deluca - Dodělává se">
-                            <span class="photo-text">Nahrát foto</span>
-                            <!-- Diagonal ribbon for special status -->
-                            <span class="avatar-ribbon" aria-hidden="true">Dodělává se</span>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h4 style="margin-bottom:8px">Marco Deluca</h4>
+                    <div class="muted-small" style="margin-bottom:12px">Trestní spory, civilní případy</div>
+                    <div style="color:var(--gold);font-weight:700;cursor:pointer" onclick="navigator.clipboard.writeText('9079635621').then(() => alert('Telefonní číslo zkopírovano!'))" title="Klikněte pro zkopírování">📞 907 963 5621</div>
                 </div>
             </div>
         </section>
@@ -267,24 +251,13 @@
         <section id="pricing" class="container">
             <div class="section-title reveal">
                 <h3>Ceník</h3>
-                <p>Transparentní sazby za právní služby.</p>
+                <p>Transparentní informace o cenách našich služeb.</p>
             </div>
 
-            <div class="grid reveal" style="grid-template-columns:repeat(3,1fr);">
-                <div class="card">
-                    <h4>První případ</h4>
-                    <p style="font-size:24px;color:var(--gold);font-weight:700;margin:12px 0">500 $/min</p>
-                    <p class="muted-small">Speciální cena pro první právní případ.</p>
-                </div>
-                <div class="card">
-                    <h4>Nepovedený případ</h4>
-                    <p style="font-size:24px;color:var(--gold);font-weight:700;margin:12px 0">600 $/min</p>
-                    <p class="muted-small">Sazba za případy bez dosažení požadovaného výsledku.</p>
-                </div>
-                <div class="card">
-                    <h4>Povedený případ</h4>
-                    <p style="font-size:24px;color:var(--gold);font-weight:700;margin:12px 0">1000 $/min</p>
-                    <p class="muted-small">Odměna za úspěšně vedené případy.</p>
+            <div class="reveal" style="display:flex;justify-content:center">
+                <div class="card" style="max-width:500px;text-align:center">
+                    <h4 style="color:var(--gold);font-size:28px;margin-bottom:16px">Ceny se odvijí dle případu</h4>
+                    <p class="muted-small">Každý případ je individuální a vyžaduje specifický přístup. Konečná cena závisí na složitosti, časové náročnosti a rozsahu poskytovaných služeb. Kontaktujte nás pro cenovou nabídku na míru.</p>
                 </div>
             </div>
         </section>
@@ -374,46 +347,10 @@
             <div>
                 <div style="display:flex;gap:12px;align-items:center">
                     <div class="logo" style="width:42px;height:42px;font-size:16px">
-                        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#c59a3b;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            
-                            <!-- Štít - klasický tvar -->
-                            <path d="M50 8 L85 25 L85 55 Q50 90 50 90 Q15 55 15 55 L15 25 Z" 
-                                  fill="url(#goldGradFooter)" opacity="0.92" stroke="#0b0b0b" stroke-width="2" stroke-linejoin="round"/>
-                            
-                            <!-- Kapitál na vrcholu -->
-                            <g transform="translate(50, 15)">
-                                <rect x="-12" y="-3" width="24" height="2.5" fill="#0b0b0b"/>
-                                <path d="M-10 -0.5 Q-12 2 -10 4" fill="none" stroke="#0b0b0b" stroke-width="1.2" stroke-linecap="round"/>
-                                <path d="M10 -0.5 Q12 2 10 4" fill="none" stroke="#0b0b0b" stroke-width="1.2" stroke-linecap="round"/>
-                                <rect x="-2" y="0" width="4" height="5" fill="#0b0b0b"/>
-                            </g>
-                            
-                            <!-- VÁHY -->
-                            <line x1="28" y1="42" x2="72" y2="42" stroke="#0b0b0b" stroke-width="2.5" stroke-linecap="round"/>
-                            <circle cx="50" cy="42" r="2.5" fill="#0b0b0b"/>
-                            <line x1="50" y1="42" x2="35" y2="35" stroke="#0b0b0b" stroke-width="1.5" stroke-linecap="round"/>
-                            <line x1="50" y1="42" x2="65" y2="35" stroke="#0b0b0b" stroke-width="1.5" stroke-linecap="round"/>
-                            
-                            <!-- Levá miska -->
-                            <ellipse cx="35" cy="32" rx="4" ry="2.2" fill="none" stroke="#0b0b0b" stroke-width="1.5"/>
-                            <path d="M31 32 Q31 35 35 36.5 Q39 35 39 32" fill="url(#goldGradFooter)" opacity="0.7" stroke="#0b0b0b" stroke-width="1"/>
-                            
-                            <!-- Pravá miska -->
-                            <ellipse cx="65" cy="32" rx="4" ry="2.2" fill="none" stroke="#0b0b0b" stroke-width="1.5"/>
-                            <path d="M61 32 Q61 35 65 36.5 Q69 35 69 32" fill="url(#goldGradFooter)" opacity="0.7" stroke="#0b0b0b" stroke-width="1"/>
-                            
-                            <!-- Dekorativní čára -->
-                            <line x1="50" y1="18" x2="50" y2="70" stroke="url(#goldGradFooter)" stroke-width="1.8" opacity="0.5" stroke-linecap="round"/>
-                        </svg>
+                        <img src="logo.jpeg" alt="Chobotnice" style="width:100%;height:100%;object-fit:contain">
                     </div>
                     <div>
-                        <strong>Advokátní kancelář Prestigio</strong>
+                        <strong>Advokátní kancelář Chobotnice</strong>
                         <div class="muted-small">Diskrétně • Profesionálně • Strategicky</div>
                     </div>
                 </div>
